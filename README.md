@@ -12,6 +12,20 @@ Guys who tell me that is old version to include JavaScript for **html** tags. <b
 But, when I read more about that I thought and decided that it very cool think.<br/>
 And I decided to create **Search Bookmarklet**.<br/>
 
-#### What functionality "Bookmarklet Search" have:
+First what you shuold know it's how write bookmarklet on **html** tags:<br/>
+key word is **javascript:**
+1. An anonymous function:
+```javascript
+javascript:(function () {
+  // code...
+})();
+```
+For example: 
+```html
+<a href="javascript:(function () { alert('Work') })();">Alert</a>
+```
+
+
+#### What functionality "Bookmarklet Search" has:
 - you may select any text on page and you should see button "Search". When you have click to "Search" you will go to another page where your text open in **google/search**.
 
