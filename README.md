@@ -30,6 +30,10 @@ For example:
 ```javascript
 javascript:{ script );void(0);
 ```
+
+Let's start write code. We used **anonymous function**.<br/>
+
 #### What functionality "Bookmarklet Search" has:
 - you may select any text on page and you should see button "Search". When you have click to "Search" you will go to another page where your text open in **google/search**.
 
+> Code you may see in **index.html** or **bookmarklet.js** files.
