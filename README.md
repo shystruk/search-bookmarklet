@@ -37,3 +37,20 @@ Let's start write code. We used **anonymous function**.<br/>
 - you may select any text on page and you should see button "Search". When you have click to "Search" you will go to another page where your text open in **google/search**.
 
 > Code you may see in **index.html** or **bookmarklet.js** files.
+
+From **bookmarklet.js** file you may copy code and create **BOOKMARKS** in any browser what you want:<br/>
+#### For ex. Google Chrome steps:
+- Click Bookmarks->Bookmark Manager;
+- Click the "Organize" link, then "Add Page" in the drop down;
+- You should see two input fields. Type the name of the bookmark .Paste the javascript code below into the second field.
+
+After that you may use it.
+
+Information
+============
+If you have some questions, problems or improvement for this bookmarklet create issues and we will discuss.<br/>
+Thank you!
+
+License
+========
+[MIT License](http://opensource.org/licenses/mit-license.php)
