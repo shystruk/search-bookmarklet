@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Bookmarklet by V.S.12.</title>
+</head>
+<body>
+    <pre>
+
+        A bookmarklet is a bookmark stored in a web browser that contains JavaScript
+
+
+        commands to extend the browser's functionality.
+
+
+        For instance, a bookmarklet might allow the user to select text on a page, click the bookmarklet,
+
+
+        and be presented with a search engine results page for the search term selected. Bookmarklets are unobtrusive scripts
+
+
+        stored as the URL of a bookmark in a web browser or as a hyperlink on a web page.
+
+
+        The term is a portmanteau of the terms bookmark and applet,[1] however,
+
+
+        an applet is not to be confused with a bookmarklet, just as script written in JavaScript is not to be confused with
+
+
+        a script written in Java. Whether bookmarklet utilities are stored as bookmarks or hyperlinks, they are designed to
+
+
+        add one-click functionality to a browser or web page. When clicked, a bookmarklet performs some function, one of a
+
+
+        wide variety such as a search query or data extraction. Bookmarklets are usually JavaScript programs.
+
+    </pre>
+
+<script>
+    (function () {
+        var clickX = 0,
+            clickY = 0,
+            currentEvent,
+            select, text,
+            elem,
+
+        //add button "Search"
+        button = document.createElement('a');
+        button.setAttribute('href','');
+        button.setAttribute('id','searchVS12');
+        button.innerHTML = 'Search';
+
+        //click to "body"
+        document.onclick = function () {
+            mouseUp();
+        };
+
+        //function for Select Text
+        function selectEvent () {
+            select = '';
+
+            if (window.getSelection()) {
+                select = window.getSelection();
+            } else if (document.getSelection()) {
+                select = document.getSelection();
+            } else {
+                select = document.selection.createRange().text;
+            }
+            return select;
+        };
+
+        //function for take coordinate mouse
+        function coordinateSelect (e) {
+            currentEvent = e || window.event;
+
+            if ((currentEvent.clientX || currentEvent.clientY)) {
+                clickX = currentEvent.clientX + document.body.scrollLeft;
+                clickY = currentEvent.clientY + document.body.scrollTop;
+            }
+
+            document.body.appendChild(button);
+
+            button.style.position = 'absolute';
+            button.style.top = clickY - 30 + 'px';
+            button.style.left = clickX + 10 + 'px';
+
+            button.setAttribute('href', 'http://www.google.com/search?q=' + encodeURIComponent(select));
+            button.setAttribute('target', '_blank');
+
+            //hide button at click
+            button.addEventListener('click', HideShow, false);
+            function HideShow() {
+                this.style.display = 'none';
+            };
+        };
+
+        //start our functions
+        function mouseUp() {
+            text = selectEvent();
+
+            if(text != '') {
+                coordinateSelect(event);
+            } else if (text.length === undefined) {
+                elem = document.getElementById('searchVS12');
+                elem.parentNode.removeChild(elem);
+            }
+        };
+    })();
+</script>
+
+</body>
+</html>
