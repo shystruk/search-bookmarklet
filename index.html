@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search Bookmarklet by V.S.12.</title>
+    <title>Search Bookmarklet</title>
 </head>
 <body>
     <pre>
@@ -68,7 +68,7 @@
                 select = document.selection.createRange().text;
             }
             return select;
-        };
+        }
 
         //function for take coordinate mouse
         function coordinateSelect (e) {
@@ -92,8 +92,8 @@
             button.addEventListener('click', HideShow, false);
             function HideShow() {
                 this.style.display = 'none';
-            };
-        };
+            }
+        }
 
         //start our functions
         function mouseUp() {
@@ -105,7 +105,7 @@
                 elem = document.getElementById('searchVS12');
                 elem.parentNode.removeChild(elem);
             }
-        };
+        }
     })();
 </script>
 

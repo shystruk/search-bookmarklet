@@ -1,8 +1,7 @@
-Search-Bookmarklet-by-JavaScript
+Search Bookmarklet
 ================================
 
-Bookmarklet by JavaScript
-
+![](demo.gif)
 
 What is that Bookmarklet in JavaScript ? <br/>
 [Bookmarklet](http://en.wikipedia.org/wiki/Bookmarklet) - is a bookmark stored in a web browser that contains JavaScript commands to extend the browser's functionality.

@@ -1,9 +1,3 @@
-/**
- * Created by v.stokolosa on 7/8/14.
- *
- * Search bookmarklet
- */
-
 javascript:(function () {
     var clickX = 0,
         clickY = 0,
@@ -31,7 +25,7 @@ javascript:(function () {
             select = document.selection.createRange().text;
         }
         return select;
-    };
+    }
 
     function coordinateSelect (e) {
         currentEvent = e || window.event;
@@ -53,8 +47,8 @@ javascript:(function () {
         button.addEventListener('click', HideShow, false);
         function HideShow() {
             this.style.display = 'none';
-        };
-    };
+        }
+    }
 
     function mouseUp() {
         text = selectEvent();
@@ -65,5 +59,5 @@ javascript:(function () {
             elem = document.getElementById('searchVS12');
             elem.parentNode.removeChild(elem);
         }
-    };
+    }
 })();
