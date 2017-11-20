@@ -3,6 +3,7 @@ Search Bookmarklet
 What is that Bookmarklet in JavaScript ? <br/>
 [Bookmarklet](http://en.wikipedia.org/wiki/Bookmarklet) - is a bookmark stored in a web browser that contains JavaScript commands to extend the browser's functionality.
 
+![](demo.gif)
 
 First time when I've seen this I was very excited. What it that, JavaScript in **href** attribute?<br/>
 
