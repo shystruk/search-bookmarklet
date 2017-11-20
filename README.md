@@ -9,7 +9,7 @@ First time when I've seen this I was very excited. What it that, JavaScript in *
 
 What you should know it is how to write a bookmarklet on **html** tags:<br/>
 
-key word is **javascript:**<br/>
+key word is `**javascript:**`<br/>
 
 1. An anonymous function:
 ```javascript
@@ -31,7 +31,8 @@ javascript:{ script );void(0);
 
 > Code you may see in **index.html** or **bookmarklet.js** files.
 
-From **bookmarklet.js** file you may copy code and create **BOOKMARKS** in any browser what you want:<br/>
+From **bookmarklet.js** file you may copy code and create **BOOKMARKS** in any browser what you want.<br/>
+
 #### For ex. Google Chrome steps:
 - Click Bookmarks->Bookmark Manager;
 - Click the "Organize" link, then "Add Page" in the drop down;
